@@ -1,25 +1,22 @@
-const choiceField = document.querySelector('.choiceField');
-const gameResult = document.querySelector('.gameResult');
-
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
     const computerSelection = choices[Math.floor(Math.random() * choices.length)];
     console.log(computerSelection);
 } 
 
-function playRound(playerSelection, computerSelection) {
+const playerSelection = prompt("Choose your weapon: rock, paper, or scissors.");
 
-    const playerSelction = choiceField;
+function playRound(playerSelection, computerSelection) {
     if(playerSelection === computerSelection) {
-        console.log('We have a tie! Try again!');
+        prompt('We have a TIE! Try again!');
     
     } else if((playerSelection === "rock" && computerSelection === "scissors") ||
               (playerSelection === "paper" && computerSelection === "rock") ||
               (playerSelection === "scissors" && computerSelection === "paper")) {
-               console.log('You Win!');
+               prompt('You WIN this round! Try again!');
             
               } else {
-                console.log('You Lose!'); 
+                console.log('You LOSE! Try again!'); 
               }
     
 
