@@ -9,18 +9,17 @@ function getComputerChoice() {
 
 function playRound(playerSelection, computerSelection) {
 
-    const playerSelction = choiceField.value.toLowerCase();
+    const playerSelction = choiceField;
     if(playerSelection === computerSelection) {
-        gameResult.textContent = 'We have a tie! Try again!';
-        gameResult.style.backgroundColor = 'yellow';
+        console.log('We have a tie! Try again!');
+    
     } else if((playerSelection === "rock" && computerSelection === "scissors") ||
               (playerSelection === "paper" && computerSelection === "rock") ||
               (playerSelection === "scissors" && computerSelection === "paper")) {
-                gameResult.textContent = 'You Win!';
-                gameResult.style.backgroundColor = 'green';
+               console.log('You Win!');
+            
               } else {
-                gameResult.textContent = 'You Lose!'; 
-                gameResult.style.backgroundColor = 'red';
+                console.log('You Lose!'); 
               }
     
 
