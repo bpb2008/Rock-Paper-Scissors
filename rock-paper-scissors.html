@@ -6,9 +6,24 @@
         <script src="rock-paper-scissors.js"></script> 
     </head>
     <body>
-        <h1>Rock Paper Scissors!</h1>
+        <h1>The Ultimate Battle!</h1>
 
-        <p>Choose "Rock", "Paper", or "Scissors" to play against the computer! Don't forget: rock crushes scissors, scissors cuts paper, and paper covers rock. If both you and the computer choose the same character, the game is tied. You will play 5 rounds against the computer in this epic battle.</p>
+        <div id="buttons" class="buttons">
+            <input type="button" value="Rock" onClick="playRound('rock')" />
+            <input type="button" value="Paper" onClick="playRound('paper')" />
+            <input type="button" value="Scissors" onClick="playRound('scissors')" />
+        </div>
+
+        <div id="result_message">
+            <p></p>
+        </div>
+
+       <div class="rules">
+        <p>Choose "Rock", "Paper", or "Scissors" to play against the computer!</p>
+        <p>Don't forget: rock crushes scissors, scissors cuts paper, and paper covers rock.</p>
+        <p>If both you and the computer choose the same character, the game is tied. Whoever scores 5 points first wins!.</p>
+        </div>
+
   
 
     </body>
